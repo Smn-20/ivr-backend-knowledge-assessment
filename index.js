@@ -42,8 +42,8 @@ async function createCall() {
     const call = await client.calls.create({
       from: TWILIO_FROM,
       to: TWILIO_TO,
-      url: "https://cca3-2c0f-eb68-204-8a00-496-b72-1a85-cfdf.ngrok-free.app/inbound-call", // Replace with your public URL
-      statusCallback: "https://cca3-2c0f-eb68-204-8a00-496-b72-1a85-cfdf.ngrok-free.app/call-complete",
+      url: "http://10.10.95.100:3005/inbound-call", // Replace with your public URL
+      statusCallback: "http://10.10.95.100:3005/call-complete",
       statusCallbackEvent: ["completed"],
       statusCallbackMethod: "POST"
     });
