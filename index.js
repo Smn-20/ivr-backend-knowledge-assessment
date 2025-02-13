@@ -11,8 +11,12 @@ const port = 3005;
 app.use(express.urlencoded({ extended: true }));
 
 // Load Twilio credentials from environment variables
-const { TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_FROM, TWILIO_TO, MONGO_URI } =
-  process.env;
+
+  const TWILIO_ACCOUNT_SID= "AC0c73742d30f90607e85bce6652b82e18"
+  const TWILIO_AUTH_TOKEN= "481b39d9db2de0219aa39abbada90940"
+  const TWILIO_FROM= "+18159085439"
+  const TWILIO_TO= "+258841882453"
+  const MONGO_URI= "mongodb+srv://smn20:69060017ruse@cluster0.h7bys.mongodb.net/"
 
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("MongoDB Connected"))
