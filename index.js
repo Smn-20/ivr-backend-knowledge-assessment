@@ -1,4 +1,3 @@
-require("dotenv").config();
 const express = require("express");
 const twilio = require("twilio");
 const mongoose = require("mongoose");
